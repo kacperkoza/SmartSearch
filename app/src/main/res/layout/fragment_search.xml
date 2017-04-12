@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="braincode.com.smartsearch.SearchFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_layout"
+    android:fitsSystemWindows="true">
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:layout_gravity="bottom"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="78dp"
+        android:clickable="true"
+        app:rippleColor="@color/colorOrange"
+        app:backgroundTint="@color/colorOrange"
+        android:tint="#FFFFFF"
+        android:scaleY="1.5"
+        android:scaleX="1.5"
+        android:src="@android:drawable/ic_btn_speak_now"
+        app:fabSize="normal" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_your_search"
+        android:text="" />
+
+</FrameLayout>
